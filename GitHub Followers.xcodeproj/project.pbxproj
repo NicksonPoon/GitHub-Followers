@@ -64,11 +64,11 @@
 				FC3D736C246DC3AD009415FF /* SceneDelegate.swift */,
 				FC3D7373246DC3AF009415FF /* Assets.xcassets */,
 				FC3D7375246DC3AF009415FF /* LaunchScreen.storyboard */,
-				FC3D7378246DC3AF009415FF /* Info.plist */,
 				FC3D737E246DCD77009415FF /* SearchVC.swift */,
 				FC3D7380246DCDBE009415FF /* FavoritesListVC.swift */,
 				FC3D7382246DE2D1009415FF /* GFButton.swift */,
 				FC3D7384246DE7F8009415FF /* GFTextField.swift */,
+				FC3D7378246DC3AF009415FF /* Info.plist */,
 			);
 			path = "GitHub Followers";
 			sourceTree = "<group>";
