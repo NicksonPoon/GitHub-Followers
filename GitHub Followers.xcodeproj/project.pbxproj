@@ -15,6 +15,7 @@
 		FC3D7381246DCDBE009415FF /* FavoritesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3D7380246DCDBE009415FF /* FavoritesListVC.swift */; };
 		FC3D7383246DE2D1009415FF /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3D7382246DE2D1009415FF /* GFButton.swift */; };
 		FC3D7385246DE7F8009415FF /* GFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3D7384246DE7F8009415FF /* GFTextField.swift */; };
+		FC8632A9246F278400CB944A /* FollowerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8632A8246F278400CB944A /* FollowerListVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		FC3D7380246DCDBE009415FF /* FavoritesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListVC.swift; sourceTree = "<group>"; };
 		FC3D7382246DE2D1009415FF /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
 		FC3D7384246DE7F8009415FF /* GFTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTextField.swift; sourceTree = "<group>"; };
+		FC8632A8246F278400CB944A /* FollowerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				FC3D7382246DE2D1009415FF /* GFButton.swift */,
 				FC3D7384246DE7F8009415FF /* GFTextField.swift */,
 				FC3D7378246DC3AF009415FF /* Info.plist */,
+				FC8632A8246F278400CB944A /* FollowerListVC.swift */,
 			);
 			path = "GitHub Followers";
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				FC3D7381246DCDBE009415FF /* FavoritesListVC.swift in Sources */,
 				FC3D7383246DE2D1009415FF /* GFButton.swift in Sources */,
 				FC3D737F246DCD77009415FF /* SearchVC.swift in Sources */,
+				FC8632A9246F278400CB944A /* FollowerListVC.swift in Sources */,
 				FC3D736B246DC3AD009415FF /* AppDelegate.swift in Sources */,
 				FC3D736D246DC3AD009415FF /* SceneDelegate.swift in Sources */,
 			);
