@@ -20,6 +20,9 @@
 		FC8632AD246F4DF500CB944A /* GFBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8632AC246F4DF500CB944A /* GFBodyLabel.swift */; };
 		FC8632AF246F532400CB944A /* GFAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8632AE246F532400CB944A /* GFAlertVC.swift */; };
 		FC8632B1246F593300CB944A /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8632B0246F593300CB944A /* UIViewController+Ext.swift */; };
+		FC8632B8246F759000CB944A /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8632B7246F759000CB944A /* Follower.swift */; };
+		FC8632BA246F75F600CB944A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC8632B9246F75F600CB944A /* Default-568h@2x.png */; };
+		FC8632BC246F761A00CB944A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8632BB246F761A00CB944A /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		FC8632AC246F4DF500CB944A /* GFBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFBodyLabel.swift; sourceTree = "<group>"; };
 		FC8632AE246F532400CB944A /* GFAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAlertVC.swift; sourceTree = "<group>"; };
 		FC8632B0246F593300CB944A /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		FC8632B7246F759000CB944A /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
+		FC8632B9246F75F600CB944A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		FC8632BB246F761A00CB944A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 		FC3D735E246DC3AD009415FF = {
 			isa = PBXGroup;
 			children = (
+				FC8632B9246F75F600CB944A /* Default-568h@2x.png */,
 				FC3D7369246DC3AD009415FF /* GitHub Followers */,
 				FC3D7368246DC3AD009415FF /* Products */,
 			);
@@ -70,6 +77,7 @@
 		FC3D7369246DC3AD009415FF /* GitHub Followers */ = {
 			isa = PBXGroup;
 			children = (
+				FC8632B6246F758400CB944A /* Model */,
 				FC8632B4246F71EE00CB944A /* Extensions */,
 				FC8632B3246F71B800CB944A /* Custom Views */,
 				FC8632B2246F718800CB944A /* Screens */,
@@ -118,6 +126,15 @@
 				FC3D7378246DC3AF009415FF /* Info.plist */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		FC8632B6246F758400CB944A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC8632B7246F759000CB944A /* Follower.swift */,
+				FC8632BB246F761A00CB944A /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +197,7 @@
 			files = (
 				FC3D7377246DC3AF009415FF /* LaunchScreen.storyboard in Resources */,
 				FC3D7374246DC3AF009415FF /* Assets.xcassets in Resources */,
+				FC8632BA246F75F600CB944A /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC8632BC246F761A00CB944A /* User.swift in Sources */,
 				FC3D7385246DE7F8009415FF /* GFTextField.swift in Sources */,
 				FC3D7381246DCDBE009415FF /* FavoritesListVC.swift in Sources */,
 				FC3D7383246DE2D1009415FF /* GFButton.swift in Sources */,
@@ -197,6 +216,7 @@
 				FC3D737F246DCD77009415FF /* SearchVC.swift in Sources */,
 				FC8632AF246F532400CB944A /* GFAlertVC.swift in Sources */,
 				FC8632AD246F4DF500CB944A /* GFBodyLabel.swift in Sources */,
+				FC8632B8246F759000CB944A /* Follower.swift in Sources */,
 				FC8632AB246F4CA200CB944A /* GFTitleLabel.swift in Sources */,
 				FC8632A9246F278400CB944A /* FollowerListVC.swift in Sources */,
 				FC3D736B246DC3AD009415FF /* AppDelegate.swift in Sources */,
