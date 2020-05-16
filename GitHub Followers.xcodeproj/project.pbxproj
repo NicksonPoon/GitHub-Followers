@@ -70,22 +70,54 @@
 		FC3D7369246DC3AD009415FF /* GitHub Followers */ = {
 			isa = PBXGroup;
 			children = (
+				FC8632B4246F71EE00CB944A /* Extensions */,
+				FC8632B3246F71B800CB944A /* Custom Views */,
+				FC8632B2246F718800CB944A /* Screens */,
+				FC8632B5246F724000CB944A /* Support */,
+			);
+			path = "GitHub Followers";
+			sourceTree = "<group>";
+		};
+		FC8632B2246F718800CB944A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				FC3D737E246DCD77009415FF /* SearchVC.swift */,
+				FC3D7380246DCDBE009415FF /* FavoritesListVC.swift */,
+				FC8632A8246F278400CB944A /* FollowerListVC.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		FC8632B3246F71B800CB944A /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				FC3D7382246DE2D1009415FF /* GFButton.swift */,
+				FC8632AE246F532400CB944A /* GFAlertVC.swift */,
+				FC3D7384246DE7F8009415FF /* GFTextField.swift */,
+				FC8632AA246F4CA200CB944A /* GFTitleLabel.swift */,
+				FC8632AC246F4DF500CB944A /* GFBodyLabel.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		FC8632B4246F71EE00CB944A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FC8632B0246F593300CB944A /* UIViewController+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FC8632B5246F724000CB944A /* Support */ = {
+			isa = PBXGroup;
+			children = (
 				FC3D736A246DC3AD009415FF /* AppDelegate.swift */,
 				FC3D736C246DC3AD009415FF /* SceneDelegate.swift */,
 				FC3D7373246DC3AF009415FF /* Assets.xcassets */,
 				FC3D7375246DC3AF009415FF /* LaunchScreen.storyboard */,
-				FC3D737E246DCD77009415FF /* SearchVC.swift */,
-				FC3D7380246DCDBE009415FF /* FavoritesListVC.swift */,
-				FC3D7382246DE2D1009415FF /* GFButton.swift */,
-				FC3D7384246DE7F8009415FF /* GFTextField.swift */,
-				FC8632A8246F278400CB944A /* FollowerListVC.swift */,
-				FC8632AA246F4CA200CB944A /* GFTitleLabel.swift */,
-				FC8632AC246F4DF500CB944A /* GFBodyLabel.swift */,
-				FC8632AE246F532400CB944A /* GFAlertVC.swift */,
-				FC8632B0246F593300CB944A /* UIViewController+Ext.swift */,
 				FC3D7378246DC3AF009415FF /* Info.plist */,
 			);
-			path = "GitHub Followers";
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
