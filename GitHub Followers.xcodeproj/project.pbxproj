@@ -21,7 +21,6 @@
 		FC8632AF246F532400CB944A /* GFAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8632AE246F532400CB944A /* GFAlertVC.swift */; };
 		FC8632B1246F593300CB944A /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8632B0246F593300CB944A /* UIViewController+Ext.swift */; };
 		FC8632B8246F759000CB944A /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8632B7246F759000CB944A /* Follower.swift */; };
-		FC8632BA246F75F600CB944A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC8632B9246F75F600CB944A /* Default-568h@2x.png */; };
 		FC8632BC246F761A00CB944A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8632BB246F761A00CB944A /* User.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +41,6 @@
 		FC8632AE246F532400CB944A /* GFAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAlertVC.swift; sourceTree = "<group>"; };
 		FC8632B0246F593300CB944A /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		FC8632B7246F759000CB944A /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
-		FC8632B9246F75F600CB944A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		FC8632BB246F761A00CB944A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,7 +58,6 @@
 		FC3D735E246DC3AD009415FF = {
 			isa = PBXGroup;
 			children = (
-				FC8632B9246F75F600CB944A /* Default-568h@2x.png */,
 				FC3D7369246DC3AD009415FF /* GitHub Followers */,
 				FC3D7368246DC3AD009415FF /* Products */,
 			);
@@ -82,6 +79,7 @@
 				FC8632B3246F71B800CB944A /* Custom Views */,
 				FC8632B2246F718800CB944A /* Screens */,
 				FC8632B5246F724000CB944A /* Support */,
+				FC3D7378246DC3AF009415FF /* Info.plist */,
 			);
 			path = "GitHub Followers";
 			sourceTree = "<group>";
@@ -123,7 +121,6 @@
 				FC3D736C246DC3AD009415FF /* SceneDelegate.swift */,
 				FC3D7373246DC3AF009415FF /* Assets.xcassets */,
 				FC3D7375246DC3AF009415FF /* LaunchScreen.storyboard */,
-				FC3D7378246DC3AF009415FF /* Info.plist */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -197,7 +194,6 @@
 			files = (
 				FC3D7377246DC3AF009415FF /* LaunchScreen.storyboard in Resources */,
 				FC3D7374246DC3AF009415FF /* Assets.xcassets in Resources */,
-				FC8632BA246F75F600CB944A /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
