@@ -98,8 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				FC3D737E246DCD77009415FF /* SearchVC.swift */,
-				FC3D7380246DCDBE009415FF /* FavoritesListVC.swift */,
 				FC8632A8246F278400CB944A /* FollowerListVC.swift */,
+				FC3D7380246DCDBE009415FF /* FavoritesListVC.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
