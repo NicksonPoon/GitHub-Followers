@@ -56,13 +56,14 @@ class FollowerListVC: UIViewController {
 
     
     func getFollowers(username: String, page: Int)  {
+        showLoadingView()
         NetworkManager.shared.getFollowers(for: username, page: page) { [weak self] result in
             guard let self = self else { return }
+            self.dismissLoadingView()
             
             switch result {
             case .success(let followers):
                 if followers.count < 100 { self.hasMoreFollowers = false }
-                // Add Next 100 followers to our followers array
                 self.followers.append(contentsOf: followers)
                 self.updatedata()
                 
@@ -97,12 +98,13 @@ extension FollowerListVC: UICollectionViewDelegate {
     
     
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        guard hasMoreFollowers else { return }
+
         let offsetY = scrollView.contentOffset.y
         let contentHeight = scrollView.contentSize.height
         let height = scrollView.frame.size.height
         
         if offsetY > contentHeight - height {
-            guard hasMoreFollowers else { return }
             page+=1
             getFollowers(username: username, page: page)
             
