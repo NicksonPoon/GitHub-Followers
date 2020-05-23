@@ -29,6 +29,8 @@
 		FCD0D09B24732BAE00135314 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD0D09A24732BAE00135314 /* UIHelper.swift */; };
 		FCD0D0A324749B5000135314 /* GFEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD0D0A224749B5000135314 /* GFEmptyStateView.swift */; };
 		FCE616A12479D3B0000E318B /* UserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE616A02479D3B0000E318B /* UserInfoVC.swift */; };
+		FCE616A32479DEB0000E318B /* GFUserInfoHeaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE616A22479DEB0000E318B /* GFUserInfoHeaderVC.swift */; };
+		FCE616A52479DF2B000E318B /* GFSecondaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE616A42479DF2B000E318B /* GFSecondaryTitleLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,8 @@
 		FCD0D09A24732BAE00135314 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		FCD0D0A224749B5000135314 /* GFEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFEmptyStateView.swift; sourceTree = "<group>"; };
 		FCE616A02479D3B0000E318B /* UserInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoVC.swift; sourceTree = "<group>"; };
+		FCE616A22479DEB0000E318B /* GFUserInfoHeaderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFUserInfoHeaderVC.swift; sourceTree = "<group>"; };
+		FCE616A42479DF2B000E318B /* GFSecondaryTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFSecondaryTitleLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				FC8632AE246F532400CB944A /* GFAlertVC.swift */,
+				FCE616A22479DEB0000E318B /* GFUserInfoHeaderVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -215,6 +220,7 @@
 			children = (
 				FC8632AA246F4CA200CB944A /* GFTitleLabel.swift */,
 				FC8632AC246F4DF500CB944A /* GFBodyLabel.swift */,
+				FCE616A42479DF2B000E318B /* GFSecondaryTitleLabel.swift */,
 			);
 			path = Labels;
 			sourceTree = "<group>";
@@ -308,9 +314,11 @@
 				FC8632AF246F532400CB944A /* GFAlertVC.swift in Sources */,
 				FCC0FF052470A4730072B6F3 /* FollowerCell.swift in Sources */,
 				FC8632C2246F8C8900CB944A /* ErrorMessage.swift in Sources */,
+				FCE616A32479DEB0000E318B /* GFUserInfoHeaderVC.swift in Sources */,
 				FC8632AD246F4DF500CB944A /* GFBodyLabel.swift in Sources */,
 				FC8632B8246F759000CB944A /* Follower.swift in Sources */,
 				FC8632AB246F4CA200CB944A /* GFTitleLabel.swift in Sources */,
+				FCE616A52479DF2B000E318B /* GFSecondaryTitleLabel.swift in Sources */,
 				FCD0D0A324749B5000135314 /* GFEmptyStateView.swift in Sources */,
 				FC8632BF246F7C9800CB944A /* NetworkManager.swift in Sources */,
 				FC8632A9246F278400CB944A /* FollowerListVC.swift in Sources */,
