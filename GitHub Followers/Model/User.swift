@@ -14,9 +14,9 @@ struct User: Codable {
     let htmlUrl: String
     let createdAt: String
     
-    let name: String?
-    let location: String?
-    let bio: String?
+    var name: String?
+    var location: String?
+    var bio: String?
     
     let following: Int
     let followers: Int
