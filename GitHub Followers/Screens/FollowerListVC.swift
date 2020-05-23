@@ -28,8 +28,10 @@ class FollowerListVC: UIViewController {
         configureCollectionView()
         getFollowers(username: username, page: page)
         configureDataSource()
+        configureSearchController()
         
     }
+    
     
     func configureViewController() {
 
@@ -53,6 +55,12 @@ class FollowerListVC: UIViewController {
         collectionView.register(FollowerCell.self, forCellWithReuseIdentifier: FollowerCell.reuseID)
     }
 
+    func configureSearchController() {
+        let searchController = UISearchController()
+        searchController.searchResultsUpdater = self
+        searchController.searchBar.placeholder = "Search usernames"
+        navigationItem.searchController = searchController
+    }
 
     
     func getFollowers(username: String, page: Int)  {
@@ -127,4 +135,12 @@ extension FollowerListVC: UICollectionViewDelegate {
 //        print("Height = \(height)")
         
     }
+}
+
+extension FollowerListVC: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        
+    }
+    
+    
 }
