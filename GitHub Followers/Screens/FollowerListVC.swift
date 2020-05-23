@@ -20,9 +20,11 @@ class FollowerListVC: UIViewController {
     var followers: [Follower] = []
     var filteredFollowers: [Follower] = []
     
+    var isSearching = false
+    
     var collectionView: UICollectionView!
     var dataSource: UICollectionViewDiffableDataSource<Section, Follower>!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViewController()
@@ -35,7 +37,7 @@ class FollowerListVC: UIViewController {
     
     
     func configureViewController() {
-
+        
         view.backgroundColor = .systemBackground
         navigationController?.navigationBar.prefersLargeTitles = true
     }
@@ -51,11 +53,11 @@ class FollowerListVC: UIViewController {
         view.addSubview(collectionView)
         
         collectionView.delegate = self
-
+        
         collectionView.backgroundColor = .systemBackground
         collectionView.register(FollowerCell.self, forCellWithReuseIdentifier: FollowerCell.reuseID)
     }
-
+    
     func configureSearchController() {
         let searchController = UISearchController()
         searchController.searchResultsUpdater = self
@@ -64,7 +66,7 @@ class FollowerListVC: UIViewController {
         navigationItem.searchController = searchController
         navigationItem.hidesSearchBarWhenScrolling = false
     }
-
+    
     
     func getFollowers(username: String, page: Int)  {
         showLoadingView()
@@ -119,7 +121,7 @@ extension FollowerListVC: UICollectionViewDelegate {
     
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         guard hasMoreFollowers else { return }
-
+        
         let offsetY = scrollView.contentOffset.y
         let contentHeight = scrollView.contentSize.height
         let height = scrollView.frame.size.height
@@ -129,13 +131,19 @@ extension FollowerListVC: UICollectionViewDelegate {
             getFollowers(username: username, page: page)
             
         }
+        //        print("OffsetY = \(offsetY)")
+        //        print("ContentHeight = \(contentHeight)")
+        //        print("Height = \(height)")
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let activeArray = isSearching ? filteredFollowers : followers
+        let follower = activeArray[indexPath.item]
         
-        
-        
-        
-//        print("OffsetY = \(offsetY)")
-//        print("ContentHeight = \(contentHeight)")
-//        print("Height = \(height)")
+        let destVC = UserInfoVC()
+        destVC.username = follower.login
+        let navController = UINavigationController(rootViewController: destVC)
+        present(navController, animated: true)
         
     }
 }
@@ -144,12 +152,14 @@ extension FollowerListVC: UISearchResultsUpdating, UISearchBarDelegate {
     func updateSearchResults(for searchController: UISearchController) {
         //if search is empty, do nothing
         guard let filter = searchController.searchBar.text, !filter.isEmpty else { return }
-    
+        isSearching = true
+        
         filteredFollowers = followers.filter { $0.login.lowercased().contains(filter.lowercased()) }
         updatedata(on: filteredFollowers)
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        isSearching = false
         updatedata(on: followers)
     }
 }
