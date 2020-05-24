@@ -31,6 +31,7 @@
 		FCE616A12479D3B0000E318B /* UserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE616A02479D3B0000E318B /* UserInfoVC.swift */; };
 		FCE616A32479DEB0000E318B /* GFUserInfoHeaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE616A22479DEB0000E318B /* GFUserInfoHeaderVC.swift */; };
 		FCE616A52479DF2B000E318B /* GFSecondaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE616A42479DF2B000E318B /* GFSecondaryTitleLabel.swift */; };
+		FCE616A72479EB1D000E318B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE616A62479EB1D000E318B /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		FCE616A02479D3B0000E318B /* UserInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoVC.swift; sourceTree = "<group>"; };
 		FCE616A22479DEB0000E318B /* GFUserInfoHeaderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFUserInfoHeaderVC.swift; sourceTree = "<group>"; };
 		FCE616A42479DF2B000E318B /* GFSecondaryTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFSecondaryTitleLabel.swift; sourceTree = "<group>"; };
+		FCE616A62479EB1D000E318B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 			children = (
 				FC8632C1246F8C8900CB944A /* ErrorMessage.swift */,
 				FCD0D09A24732BAE00135314 /* UIHelper.swift */,
+				FCE616A62479EB1D000E318B /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				FC3D7383246DE2D1009415FF /* GFButton.swift in Sources */,
 				FC8632B1246F593300CB944A /* UIViewController+Ext.swift in Sources */,
 				FCD0D09B24732BAE00135314 /* UIHelper.swift in Sources */,
+				FCE616A72479EB1D000E318B /* Constants.swift in Sources */,
 				FCC0FF072470A4C70072B6F3 /* GFAvatarImageView.swift in Sources */,
 				FC3D737F246DCD77009415FF /* SearchVC.swift in Sources */,
 				FC8632AF246F532400CB944A /* GFAlertVC.swift in Sources */,

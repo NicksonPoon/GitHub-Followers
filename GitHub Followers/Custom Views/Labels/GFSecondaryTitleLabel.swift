@@ -29,7 +29,8 @@ class GFSecondaryTitleLabel: UILabel {
         textColor = .secondaryLabel
         adjustsFontSizeToFitWidth = true
         minimumScaleFactor = 0.90
-        lineBreakMode = .byTruncatingTail
+        lineBreakMode = .byWordWrapping
+        
         translatesAutoresizingMaskIntoConstraints = false
         
     }
