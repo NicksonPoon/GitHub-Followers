@@ -35,5 +35,9 @@ class GFButton: UIButton {
         fatalError("init(coder:) has not been implemented")
     }
 
+    func set(backgroundColor: UIColor, title: String){
+        self.backgroundColor = backgroundColor
+        setTitle(title, for: .normal)
+    }
     
 }

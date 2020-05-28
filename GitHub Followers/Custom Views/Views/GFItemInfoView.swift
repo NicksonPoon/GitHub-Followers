@@ -39,7 +39,7 @@ class GFItemInfoView: UIView {
             symbolImageView.heightAnchor.constraint(equalToConstant: 20),
             
             titleLabel.centerYAnchor.constraint(equalTo: symbolImageView.centerYAnchor),
-            titleLabel.leadingAnchor.constraint(lessThanOrEqualToSystemSpacingAfter: symbolImageView.trailingAnchor, multiplier: 12),
+            titleLabel.leadingAnchor.constraint(equalTo: symbolImageView.trailingAnchor, constant: 12),
             titleLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor),
             titleLabel.heightAnchor.constraint(equalToConstant: 18),
             
