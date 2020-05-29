@@ -13,9 +13,7 @@ class NetworkManager {
     private let baseURL = "https://api.github.com/users/"
     let cache = NSCache<NSString, UIImage>()
     
-
     private init() {}
-    
     
     func getFollowers(for userName: String, page: Int, completed: @escaping(Result<[Follower], GFError>) -> Void) {
         let endpoint = baseURL + "\(userName)/followers?per_page=100&page=\(page)"
@@ -69,17 +67,14 @@ class NetworkManager {
                 completed(.failure(.unableToComplete))
                 return
             }
-            
             guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
                 completed(.failure(.invalidResponse))
                 return
             }
-            
             guard let data = data else {
                 completed(.failure(.invalidData))
                 return
             }
-            
             do {
                 let decoder = JSONDecoder()
                 decoder.keyDecodingStrategy = .convertFromSnakeCase
@@ -87,8 +82,7 @@ class NetworkManager {
                 completed(.success(user))
             } catch {
                 completed(.failure(.invalidData))
-            }
-            
+            }            
         }
         task.resume()
     }
