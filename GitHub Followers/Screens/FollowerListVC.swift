@@ -50,7 +50,7 @@ class FollowerListVC: UIViewController {
     }
     
     @objc func addButtonPressed(){
-        print('add button tapped')
+        print("button tapped")
     }
     
     override func viewWillAppear(_ animated: Bool) {
