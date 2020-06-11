@@ -12,7 +12,7 @@ struct User: Codable {
     let login: String
     let avatarUrl: String
     let htmlUrl: String
-    let createdAt: String
+    let createdAt: Date
     
     var name: String?
     var location: String?
