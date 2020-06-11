@@ -24,6 +24,7 @@ class FollowerListVC: GFDataLoadingVC {
     var followers: [Follower] = []
     var filteredFollowers: [Follower] = []
     var isSearching = false
+    var isLoadingMoreFollowers = false
     
     var collectionView: UICollectionView!
     var dataSource: UICollectionViewDiffableDataSource<Section, Follower>!
@@ -37,7 +38,7 @@ class FollowerListVC: GFDataLoadingVC {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViewController()
@@ -113,6 +114,8 @@ class FollowerListVC: GFDataLoadingVC {
     
     func getFollowers(username: String, page: Int)  {
         showLoadingView()
+        isLoadingMoreFollowers = true
+        
         NetworkManager.shared.getFollowers(for: username, page: page) { [weak self] result in
             guard let self = self else { return }
             self.dismissLoadingView()
@@ -135,6 +138,7 @@ class FollowerListVC: GFDataLoadingVC {
             case .failure(let error):
                 self.presentGFAlertOnMainThread(title: "Bad stuff Happened", message: error.rawValue , buttonTitle: "Ok")
             }
+            self.isLoadingMoreFollowers = false
         }
     }
     
@@ -161,7 +165,7 @@ class FollowerListVC: GFDataLoadingVC {
 extension FollowerListVC: UICollectionViewDelegate {
     
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-        guard hasMoreFollowers else { return }
+        guard hasMoreFollowers, !isLoadingMoreFollowers else { return }
         
         let offsetY = scrollView.contentOffset.y
         let contentHeight = scrollView.contentSize.height
@@ -218,7 +222,7 @@ extension FollowerListVC: FollowerListVCDelegate {
         filteredFollowers.removeAll()
         
         // Scroll back up to the top
-        
+        collectionView.scrollToItem(at: IndexPath(item: 0, section: 0), at: .top, animated: true)
         // Get followers for the new username.
         getFollowers(username: username, page: page)
     }
