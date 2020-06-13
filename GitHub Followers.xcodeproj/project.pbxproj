@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC00F0B72494645300ED7649 /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC00F0B62494645300ED7649 /* UITableView+Ext.swift */; };
 		FC072CA72490395700226586 /* GFTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC072CA62490395700226586 /* GFTabBarController.swift */; };
 		FC072CA92492B29F00226586 /* GFAlertContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC072CA82492B29F00226586 /* GFAlertContainerView.swift */; };
 		FC072CAB2492C06500226586 /* GFDataLoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC072CAA2492C06500226586 /* GFDataLoadingVC.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC00F0B62494645300ED7649 /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
 		FC072CA62490395700226586 /* GFTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTabBarController.swift; sourceTree = "<group>"; };
 		FC072CA82492B29F00226586 /* GFAlertContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAlertContainerView.swift; sourceTree = "<group>"; };
 		FC072CAA2492C06500226586 /* GFDataLoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFDataLoadingVC.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 				FC8632B0246F593300CB944A /* UIViewController+Ext.swift */,
 				FCCE3CA024813B1A009A4C98 /* Date+Ext.swift */,
 				FC072CAC2492F70C00226586 /* UIView+EXT.swift */,
+				FC00F0B62494645300ED7649 /* UITableView+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				FC8632A9246F278400CB944A /* FollowerListVC.swift in Sources */,
 				FC3D736B246DC3AD009415FF /* AppDelegate.swift in Sources */,
 				FC3D736D246DC3AD009415FF /* SceneDelegate.swift in Sources */,
+				FC00F0B72494645300ED7649 /* UITableView+Ext.swift in Sources */,
 				FC711013248055480007AD8D /* GFRepoItemVC.swift in Sources */,
 				FCE616A12479D3B0000E318B /* UserInfoVC.swift in Sources */,
 			);
