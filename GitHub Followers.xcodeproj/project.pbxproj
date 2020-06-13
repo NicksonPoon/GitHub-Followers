@@ -10,6 +10,7 @@
 		FC072CA72490395700226586 /* GFTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC072CA62490395700226586 /* GFTabBarController.swift */; };
 		FC072CA92492B29F00226586 /* GFAlertContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC072CA82492B29F00226586 /* GFAlertContainerView.swift */; };
 		FC072CAB2492C06500226586 /* GFDataLoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC072CAA2492C06500226586 /* GFDataLoadingVC.swift */; };
+		FC072CAD2492F70C00226586 /* UIView+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC072CAC2492F70C00226586 /* UIView+EXT.swift */; };
 		FC3D736B246DC3AD009415FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3D736A246DC3AD009415FF /* AppDelegate.swift */; };
 		FC3D736D246DC3AD009415FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3D736C246DC3AD009415FF /* SceneDelegate.swift */; };
 		FC3D7374246DC3AF009415FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC3D7373246DC3AF009415FF /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 		FC072CA62490395700226586 /* GFTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTabBarController.swift; sourceTree = "<group>"; };
 		FC072CA82492B29F00226586 /* GFAlertContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAlertContainerView.swift; sourceTree = "<group>"; };
 		FC072CAA2492C06500226586 /* GFDataLoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFDataLoadingVC.swift; sourceTree = "<group>"; };
+		FC072CAC2492F70C00226586 /* UIView+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+EXT.swift"; sourceTree = "<group>"; };
 		FC3D7367246DC3AD009415FF /* GitHub Followers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GitHub Followers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC3D736A246DC3AD009415FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC3D736C246DC3AD009415FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 			children = (
 				FC8632B0246F593300CB944A /* UIViewController+Ext.swift */,
 				FCCE3CA024813B1A009A4C98 /* Date+Ext.swift */,
+				FC072CAC2492F70C00226586 /* UIView+EXT.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -370,6 +373,7 @@
 				FC072CA72490395700226586 /* GFTabBarController.swift in Sources */,
 				FC8632C2246F8C8900CB944A /* ErrorMessage.swift in Sources */,
 				FCE616A32479DEB0000E318B /* GFUserInfoHeaderVC.swift in Sources */,
+				FC072CAD2492F70C00226586 /* UIView+EXT.swift in Sources */,
 				FC8632AD246F4DF500CB944A /* GFBodyLabel.swift in Sources */,
 				FC072CAB2492C06500226586 /* GFDataLoadingVC.swift in Sources */,
 				FC8632B8246F759000CB944A /* Follower.swift in Sources */,
